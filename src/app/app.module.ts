@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AlertModule } from '@coreui/angular';
 import { CarouselModule } from '@coreui/angular';
-import { BroserAnimationsModule} from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 
 import { AppComponent } from './app.component';
@@ -24,7 +24,7 @@ import { SliderComponent } from './Components/slider/slider.component';
     HttpClientModule,
     AlertModule,
     CarouselModule,
-    
+    BrowserAnimationsModule
   ],
   providers: [ServicesService],
   bootstrap: [AppComponent]
