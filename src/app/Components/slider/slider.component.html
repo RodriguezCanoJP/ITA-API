@@ -7,6 +7,10 @@
         alt="{{ ent.title }}"
         class="d-block w-100"
         loading="lazy" />
+      <c-carousel-caption class="d-none d-md-block">
+        <h3>{{ent.title}}</h3>
+        <p>{{ent.author}}</p>
+      </c-carousel-caption>
     </c-carousel-item>
   </c-carousel-inner>
   <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
