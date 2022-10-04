@@ -6,13 +6,14 @@ import { ServicesService } from "../Services/services.service";
     template: "<h1>Book</h1>"
 })
 export class BooksComponent{
+    info: any;
 
     constructor(private service: ServicesService){}
 
     noOnInit(){
         this.service.getbooks().subscribe(
             data => {
-
+                this.info = data;
             }
         )
     }
