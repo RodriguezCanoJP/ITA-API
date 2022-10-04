@@ -1,0 +1,14 @@
+<c-carousel>
+  <c-carousel-indicators></c-carousel-indicators>
+  <c-carousel-inner>
+    <c-carousel-item *ngFor="let ent of info.results.books">
+      <img
+        src="{{ent.book_image}}"
+        alt="{{ ent.title }}"
+        class="d-block w-100"
+        loading="lazy" />
+    </c-carousel-item>
+  </c-carousel-inner>
+  <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+  <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+</c-carousel>
