@@ -80,18 +80,7 @@
   display: block;
 }
 
-/* rtl:begin:ignore */
-.carousel-item-next:not(.carousel-item-start),
-.active.carousel-item-end {
-  transform: translateX(100%);
-}
 
-.carousel-item-prev:not(.carousel-item-end),
-.active.carousel-item-start {
-  transform: translateX(-100%);
-}
-
-/* rtl:end:ignore */
 
 
 //
@@ -124,6 +113,9 @@
 //
 // Left/right controls for nav
 //
+$carousel-control-width: 100px;
+$carousel-control-color: beige;
+$carousel-control-opacity: 0.9;
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -135,13 +127,13 @@
   display: flex; // 1. allow flex styles
   align-items: center; // 2. vertically center contents
   justify-content: center; // 3. horizontally center contents
-  //width: $carousel-control-width;
+  width: $carousel-control-width;
   padding: 0;
   //color: var(--#{$prefix}carousel-control-color, $carousel-control-color);
   text-align: center;
   background: none;
   border: 0;
-  //opacity: $carousel-control-opacity;
+  opacity: $carousel-control-opacity;
   //@include transition($carousel-control-transition);
 
   // Hover/focus state
