@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AlertModule } from '@coreui/angular';
+import { CarouselModule } from '@coreui/angular';
+import { BroserAnimationsModule} from '@angular/platform-browser';
+
 
 import { AppComponent } from './app.component';
 import { ServicesService } from './Services/services.service';
@@ -20,8 +22,9 @@ import { SliderComponent } from './Components/slider/slider.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgbModule,
-    AlertModule
+    AlertModule,
+    CarouselModule,
+    
   ],
   providers: [ServicesService],
   bootstrap: [AppComponent]
