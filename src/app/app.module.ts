@@ -9,13 +9,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppComponent } from './app.component';
 import { ServicesService } from './Services/services.service';
-import { BooksComponent } from './Components/books.component';
 import { SliderComponent } from './Components/slider/slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BooksComponent,
     SliderComponent
   ],
   imports: [
